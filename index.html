@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra - Fashion Shopping Online</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #FF3F6C;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .brand-logo img {
+            height: 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .search-container {
+            display: flex;
+            gap: 12px;
+        }
+
+        .search-box {
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .search-btn {
+            padding: 8px 16px;
+            border: none;
+            background-color: white;
+            color: #FF3F6C;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .user-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .login-btn, .cart-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background-color: white;
+            color: #FF3F6C;
+        }
+
+        .cart-btn {
+            background-color: #FF3F6C;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .login-btn:hover, .cart-btn:hover {
+            opacity: 0.8;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .sections, .promotions {
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        .grid-container, .deal-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+
+        .grid-item, .deal-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4RQptJU0ThBmCZE_NrcxKgHYrCnGoyw54OJq1iM7AwU9NUy-mJnUoGd3Ex8MutKZM1g&usqp=CAU" alt="Myntra Logo">
+        </div>
+        <ul class="main-nav">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Beauty</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search for products, brands, and more">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="user-links">
+            <button class="login-btn">Login</button>
+            <button class="cart-btn">Cart</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="https://cdn.grabon.in/gograbon/images/merchant/1577256263914.png" alt="Hero Image">
+        </section>
+
+        <section class="sections">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="https://thehouseofrare.com/cdn/shop/files/benedictbrown_200x.jpg?v=1722671254" alt="Men's Apparel">
+                    <p>Men's Apparel</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.shutterstock.com/image-vector/womens-clothing-logo-hanger-luxury-260nw-2285096207.jpg" alt="Women's Apparel">
+                    <p>Women's Apparel</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://images.hindustantimes.com/img/2022/12/22/550x309/istockphoto-1279108197-170667a_1671687926903_1671687937504_1671687937504.jpg" alt="Shoes">
+                    <p>Shoes</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.bewakoof.com/blog/wp-content/uploads/2023/04/image-125.png" alt="Accessories">
+                    <p>Accessories</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="promotions">
+            <h2>Exclusive Deals</h2>
+            <div class="deal-grid">
+                <div class="deal-item">50% Off on Men's Apparel</div>
+                <div class="deal-item">Buy 1 Get 1 Free on Shoes</div>
+                <div class="deal-item">Up to 70% Off on Accessories</div>
+                <div class="deal-item">New Arrivals in Women's Apparel</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Myntra. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
